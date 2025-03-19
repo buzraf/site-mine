@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Launcher</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2ecc71; /* Зеленый */
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #2c3e50; /* Темно-синий */
+            box-shadow: 0 0 30px rgba(46, 204, 113, 0.3); /* Зеленая тень */
+            border-radius: 15px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        h1, h2 {
+            color: #2ecc71; /* Зеленый */
+        }
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #ecf0f1; /* Светло-серый */
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2ecc71; /* Зеленый */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4); /* Зеленая тень */
+        }
+        .btn:hover {
+            background-color: #27ae60; /* Темно-зеленый */
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2ecc71; /* Зеленый */
+            color: #fff;
+            margin-top: 40px;
+        }
+        a {
+            color: #2ecc71; /* Зеленый */
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #2ecc71;
+        }
+        a:hover {
+            color: #27ae60; /* Темно-зеленый */
+            border-bottom-color: #27ae60;
+        }
+        .minecraft-logo {
+            width: 150px;
+            margin: 0 auto;
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="minecraft_logo.png" alt="Minecraft Logo" class="minecraft-logo">
+        <h1>Добро пожаловать в Minecraft!</h1>
+        <p>Скачай лаунчер и начни свое приключение уже сегодня.</p>
+        <a href="https://llaun.ch/ru" class="btn" target="_blank">Скачать лаунчер</a>
+    </header>
+
+    <div class="container">
+        <h2>Почему Minecraft?</h2>
+        <p>
+            Minecraft — это игра, которая позволяет тебе строить, исследовать и выживать в бесконечном мире. 
+            Создавай свои миры, играй с друзьями и наслаждайся бесконечными возможностями!
+        </p>
+
+        <h2>Как начать?</h2>
+        <p>
+            1. Скачай лаунчер по кнопке выше.<br>
+            2. Установи его на свой компьютер.<br>
+            3. Запусти игру и начни свое приключение!
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2023 Minecraft Launcher. Все права защищены.
+    </footer>
+
+</body>
+</html>
